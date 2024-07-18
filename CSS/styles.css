@@ -6,6 +6,10 @@
 --color-body: #918ca4;
 }
 
+*,*::after, *::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 
 html {
@@ -169,3 +173,5 @@ height: 40px;
   justify-content: center;
   align-items: center;
 }
+
+
