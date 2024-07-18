@@ -129,7 +129,7 @@ a {
 }
 
 .list--inline .list__item {
-  display: inline-block; /*this way we are able to add margins too*/
+  display: inline-block; /* this way we are able to add margins too */
   margin-right: 2rem;
 }
 
@@ -147,4 +147,25 @@ a {
  .list--tick .list__item {
   padding-left: 0;
  } 
+}
+
+/* Icons */
+
+.icon {
+width: 40px;
+height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary); /* fill is used only for SVG */
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px; /* px unit is used because icon size doesn't change depending on screen size */
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex; /* the width and height property has no effect on span elements, that is why we set inline, in this case inline-flex*/
+  justify-content: center;
+  align-items: center;
 }
