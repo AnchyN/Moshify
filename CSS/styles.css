@@ -281,4 +281,24 @@ height: 40px;
   }
 }
 
+/* Cards */
 
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3; /* horizontal, vertical offset, blur, spread */
+  overflow: hidden; /* so that the header also has a round corner (we added a backgorund color to the header which made it bigger than ist parent and it owerflowed */ 
+}
+
+.card__header, .card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+ background: var(--color-primary);
+ color: #fff;
+}
+
+.card--secondary .card__header {
+ background: var(--color-secondary);
+ color: #fff;
+}
