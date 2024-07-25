@@ -164,8 +164,17 @@ width: 40px;
 height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   fill: var(--color-primary); /* fill is used only for SVG */
+}
+
+.icon--white{
+ fill: #fff;
 }
 
 .icon-container {
@@ -176,6 +185,10 @@ height: 40px;
   display: inline-flex; /* the width and height property has no effect on span elements, that is why we set inline, in this case inline-flex*/
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* Buttons */
@@ -457,3 +470,41 @@ height: 40px;
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  /* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+}  
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%; /* this way we always have two equal columns */
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote, 
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width:768px) {  /* my change */
+  .card {
+    overflow: visible;
+    padding: 4rem;
+  }
+}
