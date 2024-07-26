@@ -589,3 +589,42 @@ height: 40px;
   max-height: 100vh; /* with max-height we allow to strech vertically but not more then its content, with the height property the content area would take up the entire height of the viewport */
   opacity: 1;
 }
+
+/* Blocks */
+
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: #000;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%); /* x and y offsets */
+}
+
+.block--skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); /* x and y offsets */
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; /* if we have extra space it will be equally distributet inside this block */
+}
