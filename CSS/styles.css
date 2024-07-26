@@ -244,6 +244,11 @@ height: 40px;
     color: #fff;
   }
   
+  .btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .btn--block {
     width: 100%;
     display: inline-block; /* anchor elements are inline by default so we add inline-block so that the width gets applied */
@@ -507,4 +512,80 @@ height: 40px;
     overflow: visible;
     padding: 4rem;
   }
+}
+
+/* Callouts */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center; /* this is applied only to this one grid item and not all of them */
+  align-self: center; /* the same */
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto; /* this way the button gets the available space */
+  }
+
+  .callout__content { 
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start; /*this is applied only to this one grid item and not all of them */
+    margin: 0 2rem;
+  }
+}
+
+/* Collapsibles */ 
+
+.collapsible__header {
+  display: flex;
+  justify-content:space-between; /* This pushes the items to the edges of the container and add space between them */
+}
+
+.collapsible__heading {
+ margin-top: 0; 
+ font-size: 3rem;
+}
+
+.collapsible__menu {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__menu {
+ transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh; /* with max-height we allow to strech vertically but not more then its content, with the height property the content area would take up the entire height of the viewport */
+  opacity: 1;
 }

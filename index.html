@@ -13,38 +13,22 @@
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
-  <body style="padding: 5rem">
-    <div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon--small icon--white">
-              <use xlink:href="images/sprite.svg#quotes"></use>
-            </svg>
-          </span>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            incidunt tenetur natus ipsam nostrum nemo doloremque aspernatur
-            officia consequatur eius!
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">John Smith</h3>
-                <p class="quote__organisation">ABS Company</p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
+  <body>
+    <div class="collapsible">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">Item 1</h2>
+        <svg class="icon icon--primary collapsible__menu">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+      </header>
+      <div class="collapsible__content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+          doloribus eos beatae atque mollitia labore explicabo expedita facilis
+          ipsam dignissimos!
+        </p>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
