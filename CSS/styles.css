@@ -610,7 +610,7 @@ height: 40px;
 
 .collapsible__heading {
  margin-top: 0; 
- font-size: 3rem;
+ font-size: 2rem;
 }
 
 .collapsible__menu {
@@ -863,6 +863,7 @@ height: 40px;
 
 .footer a {
   color: #777;
+  font-size: 2rem;
   transition: color 0.3s;
 }
 
