@@ -17,7 +17,22 @@
     <button type="submit" class="btn btn--accent btn--stretched" id="getstarted">
       <a href="" style="color: whitesmoke;">Get started</a>
   </button>
-
+  <div class="collapsible">
+    <header class="collapsible__header">
+      <h2 class="collapsible__heading">Item 1</h2>
+      <svg class="icon icon--primary collapsible__menu">
+        <use xlink:href="images/sprite.svg#chevron"></use>
+      </svg>
+    </header>
+    <div class="collapsible__content">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+        doloribus eos beatae atque mollitia labore explicabo expedita facilis
+        ipsam dignissimos!
+      </p>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
   <script>
     document.getElementById('getstarted').addEventListener('click', function() {
         this.style.backgroundColor = '#5c4bf9'; 
