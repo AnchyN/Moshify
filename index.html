@@ -49,7 +49,9 @@
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
-          <a href="" class="btn btn--accent btn--stretched">Get started</a>
+          <button type="submit" class="btn btn--accent btn--stretched" id="getstarted">
+            <a href="" style="color: whitesmoke;">Get started</a>
+          </button>
         </header>
         <picture data-aos="zoom-in-left">
           <source
@@ -73,7 +75,7 @@
       </header>
       <div class="input-group">
         <input aria-label="Domain" type="text" class="input" placeholder="Enter domain name here" />
-        <button class="btn btn--accent">
+        <button class="btn btn--accent" id="search">
           <svg class="icon icon--white">
             <use href="images/sprite.svg#search"></use>
           </svg>
@@ -459,5 +461,20 @@
     <script>
       AOS.init();
     </script>
+    <script>
+      document.getElementById('getstarted').addEventListener('click', function() {
+          this.style.backgroundColor = '#5c4bf9'; 
+          setTimeout(() => {
+          window.location.href = 'https://hostforpros-anchy.netlify.app/'; 
+        }, 900);
+      });
+  
+      document.getElementById('search').addEventListener('click', function() {
+          this.style.backgroundColor = '#5c4bf9'; 
+          setTimeout(() => {
+          window.location.href = 'https://codewithmosh.com/p/all-access'; 
+        }, 1000);
+      });
+  </script>
   </body>
 </html>
