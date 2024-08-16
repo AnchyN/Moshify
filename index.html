@@ -10,8 +10,8 @@
     <meta property="og:title" content="Moshify" />
     <meta property="og:description" content="Moshify your website" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="images/logo.svg" />
-    <meta property="og:url" content="https://moshified.com" />
+    <meta property="og:image" content="images/banner@1x.png" />
+    <meta property="og:url" content="https://hostforpros-anchy.netlify.app/" />
     <title>Moshify - Go online for just $10</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,8 +49,12 @@
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
-          <button type="submit" class="btn btn--accent btn--stretched" id="getstarted">
-            <a href="" style="color: whitesmoke;">Get started</a>
+          <button
+            type="submit"
+            class="btn btn--accent btn--stretched"
+            id="getstarted"
+          >
+            <a href="" style="color: whitesmoke">Get started</a>
           </button>
         </header>
         <picture data-aos="zoom-in-left">
@@ -74,7 +78,12 @@
         </p>
       </header>
       <div class="input-group">
-        <input aria-label="Domain" type="text" class="input" placeholder="Enter domain name here" />
+        <input
+          aria-label="Domain"
+          type="text"
+          class="input"
+          placeholder="Enter domain name here"
+        />
         <button class="btn btn--accent" id="search">
           <svg class="icon icon--white">
             <use href="images/sprite.svg#search"></use>
@@ -462,19 +471,21 @@
       AOS.init();
     </script>
     <script>
-      document.getElementById('getstarted').addEventListener('click', function() {
-          this.style.backgroundColor = '#5c4bf9'; 
+      document
+        .getElementById("getstarted")
+        .addEventListener("click", function () {
+          this.style.backgroundColor = "#5c4bf9";
           setTimeout(() => {
-          window.location.href = 'https://hostforpros-anchy.netlify.app/'; 
-        }, 900);
-      });
-  
-      document.getElementById('search').addEventListener('click', function() {
-          this.style.backgroundColor = '#5c4bf9'; 
-          setTimeout(() => {
-          window.location.href = 'https://codewithmosh.com/p/all-access'; 
+            window.location.href = "https://hostforpros-anchy.netlify.app/";
+          }, 900);
+        });
+
+      document.getElementById("search").addEventListener("click", function () {
+        this.style.backgroundColor = "#5c4bf9";
+        setTimeout(() => {
+          window.location.href = "https://codewithmosh.com/p/all-access";
         }, 1000);
       });
-  </script>
+    </script>
   </body>
 </html>
