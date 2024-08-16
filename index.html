@@ -393,7 +393,13 @@
               moshify, your website will be deployed in less than a minute.
             </p>
           </div>
-          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+          <button
+            type="submit"
+            class="btn btn--secondary btn--stretched"
+            id="getstartedend"
+          >
+            <a href="" style="color: whitesmoke">Get Started</a>
+          </button>
         </div>
       </div>
     </div>
@@ -483,9 +489,17 @@
       document.getElementById("search").addEventListener("click", function () {
         this.style.backgroundColor = "#5c4bf9";
         setTimeout(() => {
-          window.location.href = "https://codewithmosh.com/p/all-access";
+          window.location.href = "https://codewithmosh.com/p/learning-paths";
         }, 1000);
       });
+      document
+        .getElementById("getstartedend")
+        .addEventListener("click", function () {
+          this.style.backgroundColor = "#5c4bf9";
+          setTimeout(() => {
+            window.location.href = "https://hostforpros-anchy.netlify.app/";
+          }, 900);
+        });
     </script>
   </body>
 </html>
